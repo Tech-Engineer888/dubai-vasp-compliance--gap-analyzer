@@ -1,0 +1,82 @@
+# Dubai VASP Regulatory Rulebook
+dubai_vasp_rules = [
+    # AML/CFT REQUIREMENTS
+    {
+        "id": "VARA-AML-001",
+        "category": "AML/CFT",
+        "requirement": "Comprehensive risk assessment covering customers, geographies and products",
+        "keywords": ["risk assessment", "ml/tf risk", "customer risk profile"],
+        "criticality": "critical",
+        "gpt_prompt": "Does the document specify methodology for customer risk tiering?",
+        "reference": "VARA Rulebook Section 3.1.2"
+    },
+    {
+        "id": "VARA-AML-002",
+        "category": "AML/CFT",
+        "requirement": "Enhanced Due Diligence (EDD) for high-risk customers",
+        "keywords": ["EDD", "enhanced due diligence", "high-risk customers"],
+        "criticality": "high",
+        "gpt_prompt": "Is there a clear threshold for triggering EDD?",
+        "reference": "VARA Compliance Manual §4.5"
+    },
+    
+    # TECHNOLOGY SECURITY
+    {
+        "id": "DMCC-TECH-101",
+        "category": "Technology",
+        "requirement": "Multi-signature cold wallet storage with geographic key separation",
+        "keywords": ["cold storage", "multisig", "key sharding"],
+        "criticality": "critical",
+        "gpt_prompt": "Does the architecture specify minimum 3-of-5 multisig with keys in different jurisdictions?",
+        "reference": "DMCC Digital Assets Regulations Annex B"
+    },
+    {
+        "id": "DMCC-TECH-102",
+        "category": "Technology",
+        "requirement": "Quarterly penetration testing by independent auditors",
+        "keywords": ["pentest", "penetration testing", "security audit"],
+        "criticality": "high",
+        "gpt_prompt": "Is there evidence of scheduled external security audits?",
+        "reference": "DMCC Compliance Circular 2023-07"
+    },
+    
+    # LEGAL STRUCTURE
+    {
+        "id": "VARA-LEG-201",
+        "category": "Legal",
+        "requirement": "Physical office in DIFC/DMCC/ADGM with land registry documentation",
+        "keywords": ["registered office", "premises", "DIFC", "DMCC", "ADGM"],
+        "criticality": "high",
+        "gpt_prompt": "Is there a land department certificate for the free zone office?",
+        "reference": "VARA Licensing Requirement 2.3"
+    },
+    {
+        "id": "DMCC-LEG-202",
+        "category": "Legal",
+        "requirement": "Board resolution approving VASP activities with shareholder consent",
+        "keywords": ["board resolution", "shareholder approval"],
+        "criticality": "medium",
+        "gpt_prompt": "Does the board resolution explicitly mention VASP operations?",
+        "reference": "DMCC Company Regulations §15.8"
+    },
+    
+    # FINANCIAL REQUIREMENTS
+    {
+        "id": "VARA-FIN-301",
+        "category": "Financial",
+        "requirement": "Minimum capital reserve of AED 1,000,000 in segregated account",
+        "keywords": ["capital reserve", "AED 1,000,000", "segregated account"],
+        "criticality": "critical",
+        "gpt_prompt": "Is there bank confirmation of the segregated reserve account?",
+        "reference": "VARA Financial Rules 2023"
+    },
+    {
+        "id": "DMCC-FIN-302",
+        "category": "Financial",
+        "requirement": "Professional indemnity insurance coverage of AED 5,000,000",
+        "keywords": ["indemnity insurance", "liability coverage"],
+        "criticality": "high",
+        "gpt_prompt": "Does the insurance certificate match DMCC requirements?",
+        "reference": "DMCC Member Requirements 5.4"
+    }
+]
